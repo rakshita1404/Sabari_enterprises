@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+.center{
+    text-align: center;
+}
+
+body{
+    background-color: black;
+    color: white;
+    background: linear-gradient(to left, rgb(59, 59, 43), rgba(0, 0, 0));
+    scroll-behavior: smooth;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    word-spacing: 0.3rem;
+    color: rgb(239, 198, 121);
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+}
+
+nav li a{
+    font-size: 20px;
+    color: rgb(159, 145, 145);
+}
+
+nav li a:hover{
+    color: rgb(239, 198, 121);
+}
+
+.hero{
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content:flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+.hero-text{
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 6rem;
+    font-family: monospace;
+}
+
+.capitalize{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.hero-small{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: rgb(194, 189, 189);
+    padding: 0px;
+    border: 2px solid rgba(255, 255, 255, 0.224);
+    border-radius: 15px;
+    display: inline;
+    padding: 15px;
+}
+
+.gradient{
+    background: linear-gradient(to right, #ffffff 0%, rgb(238, 226, 99) 100%);
+    background-clip: text; /* chops the backgorund area to text */
+    -webkit-text-fill-color: transparent; /* Makes the text transparent to background backside */
+}
+
+.gold{
+    color: rgb(245, 224, 3);
+}
+
+.about{
+    margin:0 5rem;
+}
+
+.about h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+.about-container{
+    display: flex;
+    margin-top: 3em;
+    gap:1em;
+}
+
+.about-container p{
+    margin: 1rem 1.5rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: lighter;
+    color: rgb(194, 189, 189);
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+.gradient-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3em;
+}
+.about-card{
+    padding: 1em;
+    border-radius: 15px;
+    background-color: rgba(177, 172, 99, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.about-card h1{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(239, 198, 121);
+}
+
+.products{
+    margin:4rem 0 2rem 0;
+}
+
+.products h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    padding: 0 1rem;
+    justify-content: center;
+}
+
+.product-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    margin-top: 2em;
+    gap: 1em;
+    padding: 1em;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-card:last-child{
+    grid-column: 1/3;
+    margin: 0 15rem;
+}
+
+.product-card p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: lighter;
+    color: rgb(194, 189, 189);
+    margin-top: 1rem;
+}
+
+.product-card:hover{
+    border: 5px solid  rgba(214, 210, 161, 0.7);
+}
+
+.brands h1{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.carousel-container {
+    margin-top: 5rem;
+    overflow: hidden;
+    white-space: nowrap; 
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+  }
+
+  .carousel-inner img{
+    border: 5px solid rgba(221, 191, 86, 0.5);
+  }
+
+.logo {
+    margin: 0 3rem; 
+}
+
+.contact h1{
+    margin-top: 6rem;
+    font-size: 2em;
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.contact-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+    gap:1rem;
+}
+.contact-item i{
+    font-size: 2.5rem;
+    color: rgb(221, 150, 18);
+    padding: 5px;
+    background-color: rgba(172, 166, 109, 0.083);
+}
+.contact-item .key{
+    font-size: 1.5rem;
+}
+.contact-item .value{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: rgb(194, 189, 189);
+}
+
+.contact-form{
+    padding: 1rem;
+    background-color:rgba(42, 42, 39, 0.649);
+    line-height: 2rem;
+    width: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.6em;
+}
+
+.contact-form label{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: rgba(216, 202, 202, 0.654);
+    margin: 0.1rem 0.5rem;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 99%;
+    padding: 0.5rem;
+    margin: 0.1rem 0.5rem;
+    border: 1px solid rgb(109, 105, 96);
+    border-radius: 5px;
+    background-color: rgba(30, 29, 29, 0.86);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.contact-form button{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: black;
+    background-color: rgba(219, 207, 74, 0.765);
+    border-radius: 8px;
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4ea86f; 
+    border: 2px #cdcd3c solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .whatsapp-button:hover {
+    background-color: #20C95A; 
+  }
+
+  .whatsapp-icon {
+    color: white;
+    font-size: 24px;
+  }
+
+  /* Animation */
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } 
+  }
+
+  .carousel-inner.animate {
+    animation: scroll 15s linear infinite; 
+  }
+
+
+@media screen and (max-width: 768px){
+    ul{
+        display: none;
+    }
+    .hero{
+        padding: 0 10px;
+        flex-direction: column-reverse;
+        gap:0;
+    }
+    .logo{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .capitalize{
+        font-size: 2rem;
+        text-transform: uppercase;
+        line-height: 3.3rem;
+    }
+    .hero-small{
+        margin: 5px 0;
+        font-size: 0.8rem;
+        border: none;
+        display: block;
+        line-height: 2em;
+        font-weight: bold;
+    }
+    .about{
+        margin: 3rem 1rem;
+    }
+    .about h1{
+        font-size: 1.5em;
+    }
+    .about-container img{
+        display: none;
+    }
+    .about-container p{
+        margin: 0rem 0;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .about-container{
+        margin-top: 1em;
+    }
+    .gradient-container{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .about-card{
+        padding: 1em;
+        border-radius: 15px;
+        background-color: rgba(177, 172, 99, 0.1);
+        width: 50%;
+        text-align: center;
+    }
+    .product-card{
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        padding: 0 1rem;
+        justify-content:center;
+    }
+    .product-card:last-child{
+        grid-column: 1;
+        margin: 0;
+    }
+
+    /* Animation */
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-400%); } 
+  }
+
+  .carousel-inner.animate {
+    animation: scroll 30s linear infinite; 
+  }
+
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    gap:3rem;
+}
+.contact-form{
+    width: 90%;
+}
+.contact-form input, .contact-form textarea{
+    width: 95%;
+    align-self: center;
+    padding: 0.5rem;
+    margin: 0.1rem 0.5rem;
+    border: 1px solid rgb(109, 105, 96);
+    border-radius: 5px;
+    background-color: rgba(30, 29, 29, 0.86);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+.contact-card{
+    padding: 0 1em;
+}
+.logo {
+    margin: 0 3rem; 
+}
+.whatsapp-button{
+    width: 40px;
+    height: 40px;
+}
+}
